@@ -4,4 +4,5 @@ plink --file h --recode vcf
 ./mask.py plink.vcf
 shapeit -T 2 --main 20 -V plink_missing.txt -M genetic_map_chr22_combined_b37.txt -O plink_phased.out
 shapeit -convert --input-haps plink_phased.out --output-vcf plink_phased.vcf
+sed -i "s/^0/22/g" plink_phased.vcf
 rm -f shapeit_*
