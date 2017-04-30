@@ -1,5 +1,6 @@
-# imputation_sim
 #!/bin/bash
+##imputation_sim
+SN=$1
 n_case=0
 n_control=1000
 REGION_FL="~/missing_gp/region/"$SN".txt"   	##Region file location
